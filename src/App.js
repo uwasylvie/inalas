@@ -5,7 +5,7 @@ import AboutUs from './components/AboutUs/AboutUs';
 import Work from "./components/Work/Work";
 
 import Services from "./components/Services/Services";
-
+import Team from "./components/Team/Team";
 import Contact from "./components/Contact/Contact";
 import Footer from './components/Footer/Footer';
 
@@ -14,11 +14,10 @@ function App() {
     <div className="holder">
       <Header />
       <AboutUs />
-      
-      <Work />
-      
       <Services />
-      
+      <Work />
+    
+      <Team/>
       <Contact />
       <Footer />
     </div>

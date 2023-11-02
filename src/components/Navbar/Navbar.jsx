@@ -29,9 +29,7 @@ const Navbar = () => {
                         <li className="nav__item">
                             <a href = "#work" className = "nav__link text__upper fw_6 text__light">work</a>
                         </li>
-                        <li className="nav__item">
-                            <a href = "#work" className = "nav__link text__upper fw_6 text__light">process</a>
-                        </li>
+                        
                         <li className="nav__item">
                             <a href = "#work" className = "nav__link text__upper fw_6 text__light">services</a>
                         </li>

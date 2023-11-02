@@ -1,48 +1,6 @@
 import images from "./images";
 
-// skills
-const skills = [
-    {
-        title: "UI/UX DESIGN",
-        value: "80%"
-    },
-    {
-        title: "WEB DEVELOPMENT",
-        value: "75%"
-    },
-    {
-        title: "APP DEVELOPMENT",
-        value: "45%"
-    },
-    {
-        title: "MARKETING",
-        value: "15%"
-    },
-];
 
-// stats
-const stats = [
-    {
-        img: `${images.icon_briefcase}`,
-        value:  548,
-        title: "projects completed"
-    },
-    {
-        img: `${images.icon_clock}`,
-        value: 1465,
-        title: "working hours"
-    },
-    {
-        img: `${images.icon_star_white}`,
-        value: 612,
-        title: "positive feedbacks"
-    },
-    {
-        img: `${images.icon_heart}`,
-        value: 735,
-        title: "happy clients"
-    },
-];
 
 // works
 const works = [
@@ -75,65 +33,62 @@ const works = [
 // services
 const services = [
     {
-        img: `${images.icon_diamond}`,
-        title: "UI / UX DESIGN",
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.'
+        img: `${images.session}`,
+        title: "Senzitization session",
+        text: 'our clients encounter a big challenge of ignorance of existing laws related to their problems. This has a very big impact on human rights promotion and protection because people do not know their rights and the rights of others.'
     },
     {
-        img: `${images.icon_archer}`,
-        title: "WEB DEVELOPMENT",
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.'
+        img: `${images.legal}`,
+        title: "Legal aid project",
+        text: 'From January to December 2013, INALAS undertook a project entitled “Legal Aid to Indigent Population and Vulnerable Groups, Victims of Human Rights”.  We were serving poor people and vulnerable groups to access to justice by providing them legal aid services.'
     },
     {
-        img: `${images.icon_phone}`,
-        title: "APP / MOBILE",
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.'
-    },
-    {
-        img: `${images.icon_console}`,
-        title: "GAME DESIGN",
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.'
-    },
-    {
-        img: `${images.icon_plane}`,
-        title: "SEO / MARKETING",
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.'
-    },
-    {
-        img: `${images.icon_star}`,
-        title: "PHOTOGRAPHY",
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.'
-    },
-    {
-        img: `${images.icon_fantasy}`,
-        title: "GRAPHIC DESIGN",
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.'
-    },
-    {
-        img: `${images.icon_paint}`,
-        title: "ILLUSTRATIONS",
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.'
+        img: `${images.human}`,
+        title: "Human rights education",
+        text: 'Following the successes of the August 2012 Rwanda program, Global Youth Connect (GYC) partnered once again with Inara Legal Aid Services (INALAS) – to empower 36 young leaders through a Human Rights Learning and Action Program.'
     }
+   
+    
+    
+]
+
+// Team
+const team = [
+    {
+        img: `${images.team_1}`,
+        title: "Rwibasira Jean Claude",
+        text: 'Lawyer/Inalas Founder Member'
+    },
+    {
+        img: `${images.team_6}`,
+        title: "Ndagimina Gilbert",
+        text: 'Lawyer/Inalas Volunteer'
+    },
+    {
+      img: `${images.team_2}`,
+      title: "Munyaneza Remy",
+      text: 'Lawyer/Inalas Founder Member'
+  },
+    {
+        img: `${images.team_3}`,
+        title: "Jean Marie Vianney",
+        text: 'Inalas Founder Member'
+    },
+    {
+      img: `${images.team_4}`,
+      title: "Gatera jean Clement",
+      text: 'Inalas Founder Member'
+  },
+  {
+    img: `${images.team_5}`,
+    title: "louise Mukasekuru",
+    text: 'Lawyer Advisor'
+}
+   
+    
+    
 ];
 
-// testimonials
-const testimonials = [
-    {
-        name: "Christine Troughton, BPTC Officer",
-        text: "The staff and support are second to none. They are polished, proficient, accessible and patient.",
-    },
-    {
-        name: "Michael Hopkins",
-        text: "Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap."
-    },
-    {
-        name: "Terry Overacker",
-        text: "We completed our product website with Dev.Point and are so excited to have it live!! It is so professionally done and eye appealing, not to mention how great it looks and works. We love how easy it is to make changes ourselves, yet know we have the support when/if we need it."
-    },
-    {
-        name: "Tim K. & Kristen H.",
-        text: "When you choose Dev.Point you get a wonderful, professional team with innovative ideas, awesome customer service, and exactly what you're looking for. It took the ideas that we had and put them perfecly on the web."
-    }
-];
 
-export default {skills, stats, works, services, testimonials};
+
+export default { works, services,team};

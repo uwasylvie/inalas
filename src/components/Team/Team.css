@@ -1,0 +1,44 @@
+.team__content{
+    gap: 4rem;
+}
+.team__content--item{
+    padding: 1rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    background-color: #dcdcdc;
+    
+
+
+}
+.team__content--item .icon{
+    height: 200px;
+    padding: auto;
+    margin: 0 auto;
+    
+}
+.team__content--item .text{
+    margin: 2rem ;
+    
+}
+.team__content--item .para__text{
+    
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px){
+    .team__content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px){
+    .team__content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team__content{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

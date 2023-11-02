@@ -7,30 +7,30 @@ const Footer = () => {
             <div className="container">
                 <div className="footer__content grid text__light text__center">
                     <div className="footer__content--item">
-                        <a href = "#" className="footer__navlink">Dev.Point Design, Inc.</a>
-                        <p className="para__text">&copy; 2022 Dev. Point. All rights reserved. Designed by Robirurk.</p>
+                        <a href = "#" className="footer__navlink">Inalas</a>
+                        <p className="para__text">&copy; 2023 Inalas. All rights reserved.</p>
                     </div>
 
                     <div className="footer__content--item">
-                        <a href = "mailto:someone@gmail.com">someone@gmail.com</a>
-                        <span>+44 986 689 009</span>
+                        <a href = "mailto:someone@gmail.com">info@inalas.org</a>
+                        <span> +250788827458</span>
                     </div>
 
                     <div className="footer__content--item">
-                        <h3 className="footer__title">Projects</h3>
+                        <h3 className="footer__title">Quick links</h3>
                         <ul className="footer__links">
-                            <li><a href = "#">About</a></li>
+                            <li><a href = "#">About Us</a></li>
                             <li><a href = "#">Services</a></li>
-                            <li><a href = "#">Career</a></li>
+                            <li><a href = "#">Team</a></li>
                         </ul>
                     </div>
 
                     <div className="footer__content--item">
-                        <h3 className="footer__title">News</h3>
+                        <h3 className="footer__title">Get in Touch</h3>
                         <ul className="footer__links">
-                            <li><a href = "#">Events</a></li>
-                            <li><a href = "#">Contact</a></li>
-                            <li><a href = "#">Legals</a></li>
+                            <li>Address: kimisagara - Kigali, Rwanda</li>
+                            <li>Hours: Tuesday and Thursday, 8:00am-12:00pm</li>
+                            
                         </ul>
                     </div>
 

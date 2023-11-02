@@ -5,8 +5,10 @@ const Contact = () => {
     return (
         <div className="contact section__padding bg__whitesmoke">
             <div className="container">
-                <h2 className="section__title text__center">Need a Project?</h2>
-                <p className="para__text text__center">Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful.</p>
+                <h2 className="section__title text__center">Contact Us</h2>
+                <p className="para__text text__center"> Whether you have a question , want to start aproject
+                or simply want to connect Feel free to send us a message in the contact form </p>
+               
 
                 <div className="contact__content">
                     <form>

@@ -12,6 +12,10 @@
     opacity: 0;
     transition: var(--transition);
 }
+.work__content--item .img{
+    
+    height: 250px;
+}
 .work__content--item .icon{
     position: absolute;
     top: 50%;
