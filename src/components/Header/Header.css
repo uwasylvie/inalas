@@ -1,19 +1,48 @@
-.header{
-    min-height: 100vh;
-}
-.header__content{
-    min-height: calc(100vh - 106px);
-    flex-direction: column;
-}
-.header__title{
-    font-size: 4.1rem;
-    line-height: 1.2;
-}
-.header__content .para__text{
-    padding: 3.6rem 0;
-    max-width: 600px;
-    margin: 0 auto;
-}
+.hero {
+    background-image: url("../../assets/images/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+  }
+  .hero .container {
+    padding-top: 5%;
+  }
+  .hero h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+  }
+  .hero p {
+    text-align: center;
+    color: #fff;
+    opacity: 0.8;
+    padding: 20px;
+  }
+  .btn6{
+    padding: 20px 40px;
+    color:#fff ;
+    font-size: 20px;
+    background:#D2691E ;
+    border-radius: 4px;
+    margin: 10px;
+    text-decoration: none;
+  }
+  .btn4{
+    padding: 20px 40px;
+    color:#fff ;
+    font-size: 20px;
+    background:#283048 ;
+    border-radius: 4px;
+    margin: 10px;
+    text-decoration: none;
+  }
+  .hero-links{
+   margin-top: 5%; 
+   margin-left: 35%;
+  
+  }
 
 @media(min-width: 992px){
     .header__content{

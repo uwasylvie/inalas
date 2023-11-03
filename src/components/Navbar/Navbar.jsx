@@ -1,78 +1,77 @@
-import React, {useState} from "react";
-import images from "../../constants/images";
+import React, { useRef } from "react";
+import { Container } from "reactstrap";
+import { Link } from "react-router-dom"
 import "./Navbar.css";
-import {FaBars, FaTimes} from "react-icons/fa";
+
+const navLinks = [
+  {
+    display: "Home",
+    url: "/",
+  },
+  {
+    display: "About Us",
+    url: "/about",
+  },
+  {
+    display: "Services",
+    url: "/service",
+  },
+  {
+    display: "Work",
+    url: "/work",
+  },
+  {
+    display: "Team",
+    url: "/team",
+  },
+
+  
+  {
+    display: "Contacts",
+    url: "/contact",
+  },
+  
+];
+
 
 const Navbar = () => {
-    const [toggleMenu, setToggleMenu] = useState(false);
-
+    const menuRef = useRef();
+  
+    const menuToggle = () => menuRef.current.classList.toggle("active__menu");
+  
     return (
-        <nav className="navbar">
-            <div className="container flex">
-                <div className="brand__and__toggler flex">
-                    <a href = "index.html" alt = "" className="navbar__brand">
-                        <img src = {images.logo} alt = "site logo" />
-                    </a>
-                    <button type = "button" className="navbar__open--btn text__light" onClick={() => setToggleMenu(true)}>
-                        <FaBars size = {26} />
-                    </button>
-                </div>
-
-                <div className="navbar__collapse">
-                    <ul className="navbar__nav">
-                        <li className="nav__item">
-                            <a href = "#home" className = "nav__link text__upper fw__6 text__light nav__active">home</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href = "#work" className = "nav__link text__upper fw_6 text__light">about</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href = "#work" className = "nav__link text__upper fw_6 text__light">work</a>
-                        </li>
-                        
-                        <li className="nav__item">
-                            <a href = "#work" className = "nav__link text__upper fw_6 text__light">services</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href = "#work" className = "nav__link text__upper fw_6 text__light">team</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href = "#work" className = "nav__link text__upper fw_6 text__light">contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-                {toggleMenu && (
-                    <div className="navbar__smallscreen">
-                        <button type = "button" className="navbar__close--btn text__light" onClick={() => setToggleMenu(false)}>
-                            <FaTimes size = {32} />
-                        </button>
-                        <ul className="navbar__nav--smallscreen text__light">
-                            <li className = "nav__item">
-                                <a href = "#home" className="nav__link text__upper fw__6 nav__active text__light">home</a>
-                            </li>
-                            <li className = "nav__item">
-                                <a href = "#about" className="nav__link text__upper fw__6 text__light">about</a>
-                            </li>
-                            <li className = "nav__item">
-                                <a href = "#about" className="nav__link text__upper fw__6 text__light">work</a>
-                            </li>
-                           
-                            <li className = "nav__item">
-                                <a href = "#about" className="nav__link text__upper fw__6 text__light">services</a>
-                            </li>
-                            <li className = "nav__item">
-                                <a href = "#about" className="nav__link text__upper fw__6 text__light">team</a>
-                            </li>
-                            <li className = "nav__item">
-                                <a href = "#about" className="nav__link text__upper fw__6 text__light">contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                )}
+      <nav className="">
+        <Container>
+          <div className="navigation">
+            <div className="logo">
+              <h2 className=" d-flex align-items-center gap-1">
+                INALAS
+              </h2>
             </div>
-        </nav>
-    )
-}
+  
+            <div className="nav d-flex align-items-center gap-5">
+              <div className="nav__menu" ref={menuRef} onClick={menuToggle}>
+                <ul className="nav__list">
+                  {navLinks.map((item, index) => (
+                    <li key={index} className="nav__item">
+                      <a href={item.url}>{item.display}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+  
+              
+            </div>
+  
+            <div className="mobile__menu">
+              <span>
+                <i class="ri-menu-line" onClick={menuToggle}></i>
+              </span>
+            </div>
+          </div>
+        </Container>
+      </nav>
+    );
+  };
 
 export default Navbar;
