@@ -8,10 +8,10 @@ const Header = () => (
     <section className='hero'>
     <div className='container'>
       <h1>INARA Legal Aid Service </h1>
-      <p>Legal representation, assistance, and advice by qualified counsel.</p>
-      <div className="hero-links"> 
-      <Link to="/contact"className="btn4" >Get Involved</Link>
-      </div>
+      <p>Legal representation, assistance, and advice by qualified counsel <br />
+      Legal Aid Service has been founded to ensure equal access to justice and  <br />
+       legal representation for all of the people of Rwanda.</p>
+      
      
       
     </div>
