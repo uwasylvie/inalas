@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 100px;
 }
   
   .nav__list {
@@ -29,6 +29,12 @@
   .nav__right p i {
     font-size: 1.3rem;
   }
+
+  .logo{
+    width: 80px;
+    height: 80px;
+    
+  }
   
   .mobile__menu span i {
     font-size: 1.4rem;
@@ -39,12 +45,7 @@
   .mobile__menu {
     display: none;
   }
-  .btn5{
-  color: #fff; 
-  padding:10px 20px;
-  text-decoration: none;
-  background-color: #D2691E;
-  }
+  
   
   @media only screen and (max-width: 991px) {
     .nav__menu {
@@ -75,9 +76,7 @@
     .mobile__menu {
       display: block;
     }
-    .nav__right {
-      display: none;
-    }
+   
   
     .active__menu {
       display: block;

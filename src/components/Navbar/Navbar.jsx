@@ -1,23 +1,22 @@
-import React, { useRef } from "react";
+
 import { Container } from "reactstrap";
 import { Link } from "react-router-dom"
 import "./Navbar.css";
+import images from "../../constants/images";
 
 
 
 
 const Navbar = () => {
-    const menuRef = useRef();
-  
-    const menuToggle = () => menuRef.current.classList.toggle("active__menu");
+   
   
     return (
       <nav className="">
         <Container>
           <div className="navigation">
-            <div className="logo">
+            <div className="logo_container">
               <h2 className=" d-flex align-items-center gap-1">
-                INALAS
+                <img src={images.logo} alt="" className="logo" />
               </h2>
             </div>
   
@@ -53,7 +52,7 @@ const Navbar = () => {
   
             <div className="mobile__menu">
               <span>
-                <i class="ri-menu-line" onClick={menuToggle}></i>
+              <Link to="/"  >Home</Link>
               </span>
             </div>
           </div>
