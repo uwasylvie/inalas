@@ -3,35 +3,7 @@ import { Container } from "reactstrap";
 import { Link } from "react-router-dom"
 import "./Navbar.css";
 
-const navLinks = [
-  {
-    display: "Home",
-    url: "/",
-  },
-  {
-    display: "About Us",
-    url: "/about",
-  },
-  {
-    display: "Services",
-    url: "/service",
-  },
-  {
-    display: "Work",
-    url: "/work",
-  },
-  {
-    display: "Team",
-    url: "/team",
-  },
 
-  
-  {
-    display: "Contacts",
-    url: "/contact",
-  },
-  
-];
 
 
 const Navbar = () => {
@@ -50,13 +22,29 @@ const Navbar = () => {
             </div>
   
             <div className="nav d-flex align-items-center gap-5">
-              <div className="nav__menu" ref={menuRef} onClick={menuToggle}>
+              <div className="nav__menu" >
                 <ul className="nav__list">
-                  {navLinks.map((item, index) => (
-                    <li key={index} className="nav__item">
-                      <a href={item.url}>{item.display}</a>
+                 
+                    <li className="nav__item">
+                    <Link to="/"  >Home</Link>
                     </li>
-                  ))}
+                   
+                    <li className="nav__item">
+                    <Link to="/about"  >About Us</Link>
+                    </li>
+                    <li className="nav__item">
+                    <Link to="/service"  >Services</Link>
+                    </li>
+                    <li className="nav__item">
+                    <Link to="/work"  >Work</Link>
+                    </li>
+                    <li className="nav__item">
+                    <Link to="/team"  >Team</Link>
+                    </li>
+                    <li className="nav__item">
+                    <Link to="/contact" >Contact</Link>
+                    </li>
+                
                 </ul>
               </div>
   
